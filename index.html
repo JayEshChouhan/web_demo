@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trafikgram</title>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container-fluid custom-container">
+            <div class="row align-items-center">
+                <div class="col-lg-3 col-6">
+                    <div class="logo">
+                        <svg width="207" height="40" viewBox="0 0 207 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.60001 5.10004H0V0.5C7.8 0.5 14.4 0.5 22.2 0.5V5.10004H13.6V27.5H8.5V5.10004H8.60001Z" fill="#CCFF00"/>
+                            <path d="M25.3 8.5L25.6 10.7C27.1 8.30001 29 8 31 8C33 8 34.9 8.79999 35.9 9.79999L33.8 13.9C32.8 13.1 31.9 12.7 30.4 12.7C27.9 12.7 25.7 14 25.7 17.5V27.5H21V8.5H25.3V8.5Z" fill="#CCFF00"/>
+                            <path d="M52.8 8.5H57.3V27.5H52.9L52.7 24.7C51.6 26.9 48.6 28 46.5 28.1C40.9 28.1 36.7 24.7 36.7 18C36.7 11.4 41.1 8 46.6 8C49.1 8 51.6 9.20004 52.7 11.1L52.8 8.5ZM41.4 18C41.4 21.6 43.9 23.8 47 23.8C54.4 23.8 54.4 12.3 47 12.3C43.9 12.2 41.4 14.3 41.4 18Z" fill="#CCFF00"/>
+                            <path d="M62.8 27.5V12.9H59.2V8.79999H62.8V7.5C62.8 2.4 66.2 0 70.1 0C71.8 0 73.5 0.5 75 1.5L73.3 5C72.3 4.3 71.4 4 70.4 4C68.8 4 67.5 5.10002 67.5 7.40002V8.70001H73.1V12.8H67.5V27.4H62.8V27.5Z" fill="#CCFF00"/>
+                            <path d="M81.6 3.09995C81.6 6.79995 76 6.79995 76 3.09995C76.1 -0.600049 81.6 -0.600049 81.6 3.09995ZM76.5 8.39994V27.4999H81.2V8.39994H76.5Z" fill="#CCFF00"/>
+                            <path d="M90 0.5V16.1L96.4 8.5H102V8.79999L94.2 17.5L103 27.2V27.5H97.5L90 18.9V27.5H85.3V0.5H90Z" fill="#CCFF00"/>
+                            <path d="M120.3 6.5L123.8 9.10004L121.7 11.8C123.2 13.5 123.7 15.4 123.7 17.4C123.7 19.8 122.8 23.1 119.7 24.5C122.9 26.1 123.6 28.4 123.6 30.8C123.6 36.1 119.6 39.3 114.1 39.3C108.6 39.3 104.4 35.9 104.4 30.8H109.1C109.1 33.3 111.4 34.9001 114.1 34.9001C116.8 34.9001 118.9 33.4 118.9 30.8C118.9 28.2 116.4 27 114.1 27C108.2 27 104.4 23.4 104.4 17.4C104.4 11.5 108.7 7.70001 114.1 7.70001C115.6 7.70001 117.1 7.89999 118.5 8.79999L120.3 6.5ZM109 17.5C109 20.8 111.2 22.8 114 22.8C116.7 22.8 118.9 20.8 118.9 17.5C118.9 14.2 116.7 12.1 114 12.1C111.3 12.1 109 14.2 109 17.5Z" fill="#CCFF00"/>
+                            <path d="M131 8.5L131.3 10.7C132.8 8.30001 134.7 8 136.7 8C138.7 8 140.6 8.79999 141.6 9.79999L139.5 13.9C138.5 13.1 137.6 12.7 136.1 12.7C133.6 12.7 131.4 14 131.4 17.5V27.5H126.7V8.5H131V8.5Z" fill="#CCFF00"/>
+                            <path d="M158.5 8.5H163V27.5H158.6L158.4 24.7C157.3 26.9 154.3 28 152.2 28.1C146.6 28.1 142.4 24.7 142.4 18C142.4 11.4 146.8 8 152.3 8C154.8 8 157.3 9.20004 158.4 11.1L158.5 8.5ZM147 18C147 21.6 149.5 23.8 152.6 23.8C160 23.8 160 12.3 152.6 12.3C149.6 12.2 147 14.3 147 18Z" fill="#CCFF00"/>
+                            <path d="M179.6 27.5001V17.3C179.6 14.8 178.3 12.5001 175.7 12.5001C173.2 12.5001 171.6 14.8 171.6 17.3V27.5001H166.9V8.40009H171.3L171.6 10.7001C172.6 8.80007 174.8 8.1001 176.6 8.1001C178.9 8.1001 181.2 9.00007 182.2 11.7001C183.9 9.00007 186.1 8.20007 188.6 8.20007C194 8.20007 196.7 11.5001 196.7 17.2001V27.5001H192V17.2001C192 14.7001 191 12.6001 188.4 12.6001C185.8 12.6001 184.3 14.8 184.3 17.3V27.5001H179.6V27.5001Z" fill="#CCFF00"/>
+                            <path d="M207 25.0999C207 28.7999 201.4 28.7999 201.4 25.0999C201.4 21.4 207 21.4 207 25.0999Z" fill="#CCFF00"/>
+                        </svg>                            
+                    </div>
+                </div>
+                <div class="col-lg-9 col-6">
+                    <div class="main_menu">
+                        <button class="menu-toggle"></button>
+                        <nav>
+                            <ul class="menu">
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#cs">Casestudies</a></li>
+                                <li><a href="#about">About Us</a></li>
+                                <li><a href="#contact">Contact Us</a></li>
+                                <li><a href="javascript:;">Log In</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="mainBanner" id="home">
+        <div class="container custom-container">
+            <h1 class="borderedText">
+                <svg class="intro go" viewbox="0 0 205 86">
+                    <text text-anchor="start" x="0" y="30" class="text text-stroke" clip-path="url(#text1)">Where</text>
+                    <text text-anchor="start" x="75" y="30" class="text text-stroke" clip-path="url(#text2)">campaigns</text>
+                    <text text-anchor="start" x="0" y="50" class="text text-stroke" clip-path="url(#text3)">that</text>
+                    <text text-anchor="start" x="47" y="50" class="text text-stroke" clip-path="url(#text4)">makes</text>
+                    <text text-anchor="start" x="0" y="111" class="text text-stroke" clip-path="url(#text5)">you thin</text>
+                    <text text-anchor="start" x="0" y="30" class="text text-stroke text-stroke-2" clip-path="url(#text1)">Where</text>
+                    <text text-anchor="start" x="75" y="30" class="text text-stroke text-stroke-2" clip-path="url(#text2)">campaigns</text>
+                    <text text-anchor="start" x="0" y="50" class="text text-stroke text-stroke-2" clip-path="url(#text3)">that</text>
+                    <text text-anchor="start" x="47" y="50" class="text text-stroke text-stroke-2" clip-path="url(#text4)">makes</text>
+                    <text text-anchor="start" x="120" y="50" class="text text-stroke text-stroke-2" clip-path="url(#text5)">you thin</text>
+                    <defs>
+                      <clipPath id="text1">
+                        <text text-anchor="start" x="0" y="30" class="text">Where</text>
+                      </clipPath>
+                      <clipPath id="text2">
+                        <text text-anchor="start" x="75" y="30" class="text">campaigns</text>
+                      </clipPath>
+                      <clipPath id="text3">
+                        <text text-anchor="start" x="0" y="50" class="text">that</text>
+                      </clipPath>
+                      <clipPath id="text4">
+                        <text text-anchor="start" x="47" y="50" class="text">makes</text>
+                      </clipPath>
+                      <clipPath id="text5">
+                        <text text-anchor="start" x="120" y="50" class="text">you thin</text>
+                      </clipPath>
+                    </defs
+                </svg>
+                <!-- <svg height="120" stroke="var(--main-color)" stroke-width="2" class="text-line" width="600">
+                    <text x="50%" dominant-baseline="middle" text-anchor="middle" y="55%">
+                        Creating
+                    </text>
+                </svg> 
+                <svg height="115" stroke="var(--main-color)" stroke-width="2" class="text-line normalText" width="742">
+                    <text x="50%" dominant-baseline="middle" text-anchor="middle" y="55%">
+                        campaigns
+                    </text>
+                </svg> 
+                <svg height="115" stroke="var(--main-color)" stroke-width="2" class="text-line" width="292">
+                    <text x="50%" dominant-baseline="middle" text-anchor="middle" y="55%">
+                        that
+                    </text>
+                </svg> 
+                <svg height="115" stroke="var(--main-color)" stroke-width="2" class="text-line normalText" width="440">
+                    <text x="50%" dominant-baseline="middle" text-anchor="middle" y="55%">
+                        makes
+                    </text>
+                </svg> 
+                <svg height="115" stroke="var(--main-color)" stroke-width="2" class="text-line" width="569">
+                    <text x="50%" dominant-baseline="middle" text-anchor="middle" y="55%">
+                        you thin
+                    </text>
+                </svg>  -->
+            </h1>    
+        </div>
+        <a href="javascript:;" class="slideToBottom jump">
+            <svg width="55" height="32" viewBox="0 0 55 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 2L27.5 28L53 2" stroke="#CCFF00" stroke-width="5"/>
+            </svg>                
+        </a>
+    </div>
+    <div class="markating_wrapper" id="cs">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 col-12">
+                    <div class="markating_text float-end">
+                        <h2>Why Meme Marketing?</h2>
+                        <p>Who doesn't like memes? No One. Memes are Highly relatable and consumable content that can create a buzz for any topic. They are arguably the best way to deliver content. Meme Marketing allows brands to use funny and relatable content to convey messages.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12 d-lg-block d-none">
+                    <div class="imgAnimation">
+                        <div class="animationBox" style="animation-delay: 100ms; transform: rotate(57.08deg);right: -245px;top: 140px;"></div>
+                        <div class="animationBox" style="animation-delay: 200ms; transform: rotate(53.56deg);right: -215px;top: 140.35px;"></div>
+                        <div class="animationBox" style="animation-delay: 300ms; transform: rotate(49.9deg);right: -185px;top: 142.89px;"></div>
+                        <div class="animationBox" style="animation-delay: 400ms; transform: rotate(46.14deg);right: -155px;top: 146.27px;"></div>
+                        <div class="animationBox" style="animation-delay: 500ms; transform: rotate(46.14deg);right: -125px;top: 157.54px;"></div>
+                        <div class="animationBox" style="animation-delay: 600ms; transform: rotate(46.14deg);right: -95px;top: 167px;"></div>
+                        <div class="animationBox" style="animation-delay: 700ms; transform: rotate(41.57deg);right: -65px;top: 168px;"></div>
+                        <div class="animationBox" style="animation-delay: 800ms; transform: rotate(37.68deg);right: -35px;top: 182.73px;"></div>
+                        <div class="animationBox" style="animation-delay: 900ms; transform: rotate(35.11deg);right: -5px;top: 201.81px;"></div>
+                        <div class="animationBox" style="animation-delay: 1000ms; transform: rotate(32.04deg);right: 25px;top: 219.09px;"></div>
+                        <div class="animationBox" style="animation-delay: 1100ms; transform: rotate(30.1deg);right: 55px;top: 237.81px;"></div>
+                        <div class="animationBox" style="animation-delay: 1200ms; transform: rotate(28.55deg);right: 85px;top: 254.48px;"></div>
+                        <div class="animationBox" style="animation-delay: 1300ms; transform: rotate(27.28deg);right: 115px;top: 277.08px;"></div>
+                        <div class="animationBox" style="animation-delay: 1400ms; transform: rotate(24.93deg);right: 145px;top: 299.34px;"></div>
+                        <div class="animationBox" style="animation-delay: 1500ms; transform: rotate(22.71deg);right: 175px;top: 322.65px;"></div>
+                        <div class="animationBox" style="animation-delay: 1600ms; transform: rotate(20.83deg);right: 205px;top: 346.65px;"></div>
+                        <div class="animationBox imgBox" style="animation-delay: 1700ms; transform: rotate(18.97deg);right: 235px;top: 366.65px;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-8">
+                <div class="col-lg-6 col-12 d-lg-block d-none">
+                    <div class="imgAnimation2">
+                        <div class="animationBox2" style="animation-delay: 100ms; left: -60px;"></div>
+                      <div class="animationBox2" style="animation-delay: 200ms; left: -30px;"></div>
+                      <div class="animationBox2" style="animation-delay: 300ms; left: 0px;"></div>
+                      <div class="animationBox2" style="animation-delay: 400ms; left: 30px;"></div>
+                      <div class="animationBox2" style="animation-delay: 500ms; left: 60px;"></div>
+                      <div class="animationBox2" style="animation-delay: 600ms; left: 90px;"></div>
+                      <div class="animationBox2" style="animation-delay: 700ms; left: 120px;"></div>
+                      <div class="animationBox2" style="animation-delay: 800ms; left: 150px;"></div>
+                      <div class="animationBox2" style="animation-delay: 900ms; left: 180px;"></div>
+                      <div class="animationBox2" style="animation-delay: 1000ms; left: 210px;"></div>
+                        <div class="animationBox2 imgBox" style="animation-delay: 1100ms; left: 240px;"></div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="markating_text float-start">
+                        <h2>Why Influencer Marketing?</h2>
+                        <p>Who doesn't like memes? No One. Memes are Highly relatable and consumable content that can create a buzz for any topic. They are arguably the best way to deliver content. Meme Marketing allows brands to use funny and relatable content to convey messages.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="aboutUs_wreapper" id="about">
+        <div class="container custom-container">
+            <div class="aboutBox_list">
+                <div class="aboutBox">
+                    <h3>WHO WE ARE</h3>
+                    <p>Trust me, we are not another marketing agency that relys solely on Paid ads. Trafikgram Designs and Executes Marketing campaigns by utilising Memes and Influencer marketing.</p>
+                </div>
+                <div class="aboutBox">
+                    <h3>Why Us?</h3>
+                    <p>Advertisements are meant to influence people. When it comes to Millennials or youngsters Paid ads on social media wont be enough. Trafikgram Creates brand emotions and makes your product more relatable.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="services_wrapper">
+        <div class="container custom-container">
+            <div class="hadding">
+                <h2>Our Services</h2>
+            </div>
+            <div class="services_slider">
+                <div class="swiper-wrapper">
+                    <div class="services_slider_item swiper-slide">
+                        <div class="services_slider_img">
+                           1
+                        </div>
+                        <div class="services_slider_content">
+                            <span class="text">Meme Marketing</span>
+                        </div>
+                    </div>
+                    <div class="services_slider_item swiper-slide">
+                        <div class="services_slider_img">
+                           2
+                        </div>
+                        <div class="services_slider_content">
+                            <span class="text">PR Agency</span>
+                        </div>
+                    </div>
+                    <div class="services_slider_item swiper-slide">
+                        <div class="services_slider_img">
+                           3
+                        </div>
+                        <div class="services_slider_content">
+                            <span class="text">Influencer Marketing</span>
+                        </div>
+                    </div>
+                    <div class="services_slider_item swiper-slide">
+                        <div class="services_slider_img">
+                           4
+                        </div>
+                        <div class="services_slider_content">
+                            <span class="text">IT Solution</span>
+                        </div>
+                    </div>
+                    <div class="services_slider_item swiper-slide">
+                        <div class="services_slider_img">
+                           5
+                        </div>
+                        <div class="services_slider_content">
+                            <span class="text">Youtube Marketing</span>
+                        </div>
+                    </div>
+                    <div class="services_slider_item swiper-slide">
+                        <div class="services_slider_img">
+                           6
+                        </div>
+                        <div class="services_slider_content">
+                            <span class="text">Affilate Marketing</span>
+                        </div>
+                    </div>
+                    <div class="services_slider_item swiper-slide">
+                        <div class="services_slider_img">
+                           7
+                        </div>
+                        <div class="services_slider_content">
+                            <span class="text">Digital Marketing</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="services_slider_pagination"></div>
+            </div>
+            <!-- <ul class="services_list">
+                <li><span class="text">Meme Marketing</span></li>
+                <li><span class="text">PR Agency</span></li>
+                <li><span class="text">Influencer Marketing</span></li>
+                <li><span class="text">IT Solution</span></li>
+                <li><span class="text">Youtube Marketing</span></li>
+                <li><span class="text">Affilate Marketing</span></li>
+                <li><span class="text">Digital Marketing</span></li>
+            </ul> -->
+        </div>
+    </div>
+    <div class="howWeDo_wrapper" id="counter1">
+        <div class="container custom-container">
+            <div class="hadding text-center">
+                <h2 class="colorMain">Wondering how we do this?</h2>
+                <p>We have an awesome community</p>
+            </div>
+            <div class="counterList row">
+                <div class="col-xl-3 col-lg-6 col-md-6 col-12">
+                    <div class="counterBox">
+                        <h4 class="borderedText"><span class="count">150</span>+</h4>
+                        <p>Content Creators</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6 col-12">
+                    <div class="counterBox">
+                        <h4 class="borderedText"><span class="count">5</span>M+</h4>
+                        <p>Potential Reach</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6 col-12">
+                    <div class="counterBox">
+                        <h4 class="borderedText"><span class="count">10</span>+</h4>
+                        <p>Categories</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6 col-12">
+                    <div class="counterBox">
+                        <h4 class="borderedText"><span class="count">12.3</span>%</h4>
+                        <p>Engagement Rate</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clients_wrapper">
+        <div class="container custom-container">
+            <div class="hadding text-center">
+                <h2>Our Clients</h2>
+            </div>
+            <div class="row align-items-center row-gap-40">
+                <div class="col-lg-4 col-md-6 col-6 text-center">
+                    <img src="images/clientsImg6.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-4 col-md-6 col-6 text-center">
+                    <img src="images/clientsImg5.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-4 col-md-6 col-6 text-center">
+                    <img src="images/clientsImg2.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-4 col-md-6 col-6 text-center">
+                    <img src="images/clientsImg4.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-4 col-md-6 col-6 text-center">
+                    <img src="images/clientsImg3.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-4 col-md-6 col-6 text-center">
+                    <img src="images/clientsImg1.png" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="howWeDo_wrapper" id="counter2">
+        <div class="container custom-container">
+            <div class="hadding text-center">
+                <h2 class="colorMain">Our Story In Numbers</h2>
+            </div>
+            <div class="counterList row">
+                <div class="col-xl-3 col-lg-6 col-md-6 col-12">
+                    <div class="counterBox">
+                        <h4 class="borderedText"><span class="count2">150</span>+</h4>
+                        <p>Days</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6 col-12">
+                    <div class="counterBox">
+                        <h4 class="borderedText"><span class="count2">5</span>M+</h4>
+                        <p>Happy Clients</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6 col-12">
+                    <div class="counterBox">
+                        <h4 class="borderedText"><span class="count2">10</span>+</h4>
+                        <p>Successful Campaigns</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6 col-12">
+                    <div class="counterBox">
+                        <h4 class="borderedText"><span class="count2">12.3</span>%</h4>
+                        <p>Campaign Reach Delivered</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contectUs_wreapper" id="contact">
+        <div class="container custom-container">
+            <div class="hadding text-center">
+                <h2 class="colorMain">CONTACT US.</h2>
+            </div>
+            <div class="miniHadding text-center">
+                <h4>COMPELETE ALL SECTIONS</h4>
+                <p>Just a form. It’s easy.</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-12">
+                    <div class="contactForm">
+                        <div class="inputBox">
+                            <input type="text" name="name" placeholder="Name">
+                        </div>
+                        <div class="inputBox">
+                            <input type="email" name="email" placeholder="Email">
+                        </div>
+                        <div class="inputBox">
+                            <input type="tel" name="phone_number" placeholder="Phone (Optional)">
+                        </div>
+                        <ul class="inputBox">
+                            <li>
+                                <input type="radio" name="whoIm" id="creater">
+                                <label for="creater"> I am a Creator</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="whoIm" id="brand">
+                                <label for="brand"> I represent a Brand</label>
+                            </li>
+                        </ul>
+                        <div class="inputBox">
+                            <textarea name="message" placeholder="Message" id="" rows="6"></textarea>
+                        </div>
+                       <div class="inputBtn">
+                           <button class="sendBtn">Send</button>
+                       </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="contactDetails">
+                        <div class="box">
+                            <h6>OUR OFFICE</h6>
+                            <p>Mallorca 336, 08037. Barcelona Tel. +12 345 678 900</p>
+                        </div>
+                        <div class="box">
+                            <h6>START A CONVERSATION</h6>
+                            <p>
+                                hello@example.com 
+                                +1 (00) 123-45-67
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom_footer">
+            <div class="container custom-container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-sm-12">
+                        <p>
+                            Copyright 2021-22 
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 464c-114.7 0-208-93.31-208-208S141.3 48 256 48s208 93.31 208 208S370.7 464 256 464zM255.1 176C255.1 176 255.1 176 255.1 176c21.06 0 40.92 8.312 55.83 23.38c9.375 9.344 24.53 9.5 33.97 .1562c9.406-9.344 9.469-24.53 .1562-33.97c-24-24.22-55.95-37.56-89.95-37.56c0 0 .0313 0 0 0c-33.97 0-65.95 13.34-89.95 37.56c-49.44 49.88-49.44 131 0 180.9c24 24.22 55.98 37.56 89.95 37.56c.0313 0 0 0 0 0c34 0 65.95-13.34 89.95-37.56c9.312-9.438 9.25-24.62-.1562-33.97c-9.438-9.312-24.59-9.219-33.97 .1562c-14.91 15.06-34.77 23.38-55.83 23.38c0 0 .0313 0 0 0c-21.09 0-40.95-8.312-55.89-23.38c-30.94-31.22-30.94-82.03 0-113.3C214.2 184.3 234 176 255.1 176z"/>
+                            </svg>
+                            Trafikgram. All rights reserved.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <ul>
+                            <li>
+                                <a href="javascript:;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path xmlns="http://www.w3.org/2000/svg" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path xmlns="http://www.w3.org/2000/svg" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path xmlns="http://www.w3.org/2000/svg" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path xmlns="http://www.w3.org/2000/svg" d="M496.926,366.6c-3.373-9.176-9.8-14.086-17.112-18.153-1.376-.806-2.641-1.451-3.72-1.947-2.182-1.128-4.414-2.22-6.634-3.373-22.8-12.09-40.609-27.341-52.959-45.42a102.889,102.889,0,0,1-9.089-16.12c-1.054-3.013-1-4.724-.248-6.287a10.221,10.221,0,0,1,2.914-3.038c3.918-2.591,7.96-5.22,10.7-6.993,4.885-3.162,8.754-5.667,11.246-7.44,9.362-6.547,15.909-13.5,20-21.278a42.371,42.371,0,0,0,2.1-35.191c-6.2-16.318-21.613-26.449-40.287-26.449a55.543,55.543,0,0,0-11.718,1.24c-1.029.224-2.059.459-3.063.72.174-11.16-.074-22.94-1.066-34.534-3.522-40.758-17.794-62.123-32.674-79.16A130.167,130.167,0,0,0,332.1,36.443C309.515,23.547,283.91,17,256,17S202.6,23.547,180,36.443a129.735,129.735,0,0,0-33.281,26.783c-14.88,17.038-29.152,38.44-32.673,79.161-.992,11.594-1.24,23.435-1.079,34.533-1-.26-2.021-.5-3.051-.719a55.461,55.461,0,0,0-11.717-1.24c-18.687,0-34.125,10.131-40.3,26.449a42.423,42.423,0,0,0,2.046,35.228c4.105,7.774,10.652,14.731,20.014,21.278,2.48,1.736,6.361,4.24,11.246,7.44,2.641,1.711,6.5,4.216,10.28,6.72a11.054,11.054,0,0,1,3.3,3.311c.794,1.624.818,3.373-.36,6.6a102.02,102.02,0,0,1-8.94,15.785c-12.077,17.669-29.363,32.648-51.434,44.639C32.355,348.608,20.2,352.75,15.069,366.7c-3.868,10.528-1.339,22.506,8.494,32.6a49.137,49.137,0,0,0,12.4,9.387,134.337,134.337,0,0,0,30.342,12.139,20.024,20.024,0,0,1,6.126,2.741c3.583,3.137,3.075,7.861,7.849,14.78a34.468,34.468,0,0,0,8.977,9.127c10.019,6.919,21.278,7.353,33.207,7.811,10.776.41,22.989.881,36.939,5.481,5.778,1.91,11.78,5.605,18.736,9.92C194.842,480.951,217.707,495,255.973,495s61.292-14.123,78.118-24.428c6.907-4.24,12.872-7.9,18.489-9.758,13.949-4.613,26.163-5.072,36.939-5.481,11.928-.459,23.187-.893,33.206-7.812a34.584,34.584,0,0,0,10.218-11.16c3.434-5.84,3.348-9.919,6.572-12.771a18.971,18.971,0,0,1,5.753-2.629A134.893,134.893,0,0,0,476.02,408.71a48.344,48.344,0,0,0,13.019-10.193l.124-.149C498.389,388.5,500.708,376.867,496.926,366.6Zm-34.013,18.277c-20.745,11.458-34.533,10.23-45.259,17.137-9.114,5.865-3.72,18.513-10.342,23.076-8.134,5.617-32.177-.4-63.239,9.858-25.618,8.469-41.961,32.822-88.038,32.822s-62.036-24.3-88.076-32.884c-31-10.255-55.092-4.241-63.239-9.858-6.609-4.563-1.24-17.211-10.341-23.076-10.739-6.907-24.527-5.679-45.26-17.075-13.206-7.291-5.716-11.8-1.314-13.937,75.143-36.381,87.133-92.552,87.666-96.719.645-5.046,1.364-9.014-4.191-14.148-5.369-4.96-29.189-19.7-35.8-24.316-10.937-7.638-15.748-15.264-12.2-24.638,2.48-6.485,8.531-8.928,14.879-8.928a27.643,27.643,0,0,1,5.965.67c12,2.6,23.659,8.617,30.392,10.242a10.749,10.749,0,0,0,2.48.335c3.6,0,4.86-1.811,4.612-5.927-.768-13.132-2.628-38.725-.558-62.644,2.84-32.909,13.442-49.215,26.04-63.636,6.051-6.932,34.484-36.976,88.857-36.976s82.88,29.92,88.931,36.827c12.611,14.421,23.225,30.727,26.04,63.636,2.071,23.919.285,49.525-.558,62.644-.285,4.327,1.017,5.927,4.613,5.927a10.648,10.648,0,0,0,2.48-.335c6.745-1.624,18.4-7.638,30.4-10.242a27.641,27.641,0,0,1,5.964-.67c6.386,0,12.4,2.48,14.88,8.928,3.546,9.374-1.24,17-12.189,24.639-6.609,4.612-30.429,19.343-35.8,24.315-5.568,5.134-4.836,9.1-4.191,14.149.533,4.228,12.511,60.4,87.666,96.718C468.629,373.011,476.119,377.524,462.913,384.877Z"/>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+        $('.menu-toggle').on('click', function(){
+            $('body').toggleClass('open');
+        });
+    </script>
+    <script>
+        if($('.slideToBottom').length>0) {
+            $(".slideToBottom").click(function () {
+                $('html, body').animate({
+                    scrollTop: $(this).closest(".mainBanner").next().offset().top
+                }, "slow");
+            });
+        }
+    </script>
+    <script>
+        function counter(props){
+            $(props).each(function () {
+                var size = $(this).text().split(".")[1] ? $(this).text().split(".")[1].length : 0;
+                $(this).prop('Counter', 0).animate({
+                    Counter: $(this).text()
+                }, {
+                    duration: 5000,
+                    step: function (func) {
+                        $(this).text(parseFloat(func).toFixed(size));
+                    }
+                });
+            });
+        }
+        var counted = 0;
+        var counted1 = 0;
+        var counted2 = 0;
+        $(window).scroll(function() {
+            var oTop = $('#counter1').offset().top - window.innerHeight;
+            var oTop2 = $('#counter2').offset().top - window.innerHeight;
+            var oTop3 = $('.markating_wrapper').offset().top - window.innerHeight;
+            if (counted == 0 && $(window).scrollTop() > oTop) {
+                counter('.count');
+                counted = 1;
+            }
+            if (counted1 == 0 && $(window).scrollTop() > oTop2) {
+                counter('.count2');
+                counted1 = 1;
+            }
+            if (counted2 == 0 && $(window).scrollTop() > oTop3) {
+                $('.markating_wrapper').addClass("on")
+                counted2 = 1;
+            }
+        });
+        
+    </script>
+    <script>
+        var swiper = new Swiper('.services_slider', {
+            spaceBetween: 30,
+            effect: 'fade',
+            loop: true,
+            mousewheel: {
+                invert: false,
+            },
+            // autoHeight: true,
+            pagination: {
+                el: '.services_slider_pagination',
+                clickable: true,
+            }
+        });
+    </script>
+    <script>
+        $(function() {
+        $('.intro').addClass('go');
+      
+        $('.reload').click(function() {
+          $('.intro').removeClass('go').delay(200).queue(function(next) {
+            $('.intro').addClass('go');
+            next();
+          });
+      
+        });
+      })
+    </script>
+</body>
+</html>
